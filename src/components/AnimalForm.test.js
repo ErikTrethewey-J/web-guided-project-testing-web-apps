@@ -7,7 +7,7 @@ test('renders the AnimalForm component without errors', () => {
     render(<AnimalForm />);
 })
 
-test('when a user fills out and submits the form, a new animal is created and displayed', () => {
+test('when a user fills out and submits the form, a new animal is created and displayed', async () => {
     // Arrange - render the component and get access to the form elements in the DOM
     render(<AnimalForm />);
     const speciesInput = screen.getByLabelText(/species/i);
