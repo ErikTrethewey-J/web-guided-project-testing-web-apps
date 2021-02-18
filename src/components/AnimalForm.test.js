@@ -22,5 +22,7 @@ test('when a user fills out and submits the form, a new animal is created and di
     userEvent.click(submitButton);
 
     // Assert - make sure that the new animal we created is displayed in the list
+    const newAnimal = screen.findByText(/grizzly bear/i);
+    
 
 })
