@@ -25,6 +25,7 @@ test('renders the app header', () => {
     // Assert (not absolutely necessary, but some other examples that work):
     expect(header).toBeInTheDocument();
     expect(header).toBeTruthy();
+    expect(header).toHaveTextContent("Add New Animal");
 
 })
 
