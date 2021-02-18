@@ -16,7 +16,7 @@ test('renders App without errors', () => {
 test('renders the app header', () => {
     // Arrange
     const {getByText} = render(<App />);
-    const header = getByText("add new animal"); // there is an implicit assertion built in here
+    const header = getByText("Add New Animal"); // there is an implicit assertion built in here
 
     // Act
 
