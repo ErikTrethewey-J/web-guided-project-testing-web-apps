@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import App from "./App";
 
 // basic test format: test('description of test', () => {
@@ -30,6 +30,5 @@ test('renders the app header', () => {
     // Negative assertions (don't need all of these, just some extra examples):
     expect(header).not.toBeFalsy();
     expect(header).not.toHaveTextContent(/add new dog/i);
-
 })
 
