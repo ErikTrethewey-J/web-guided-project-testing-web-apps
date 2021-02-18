@@ -10,7 +10,6 @@ import App from "./App";
 
 test('renders App without errors', () => {
     // Arrange
-    // render(<App />);
-    console.log("hi team!");
+    render(<App />);
 })
 
