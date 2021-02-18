@@ -13,7 +13,7 @@ test('when a user fills out and submits the form, a new animal is created and di
     const speciesInput = screen.getByLabelText(/species/i);
     const ageInput = screen.getByLabelText(/age/i);
     const notesInput = screen.getByLabelText(/notes/i);
-    const submitButton = screen.getByRole("button", { name: /subasldkfjmit/i });
+    const submitButton = screen.getByRole("button", { name: /submit/i });
 
     // Act - type into the form, filling out all fields of the form, then submit
     userEvent.type(speciesInput, "Grizzly Bear");
