@@ -8,6 +8,8 @@ import App from "./App";
     // Assert: make sure that the component behaved in the way you'd expect it to.
 // })
 
+// the regular expression /text/i allows any case variation of "text" string: Text, TEXT, tExT, etc.
+
 test('renders App without errors', () => {
     // Arrange
     render(<App />);
@@ -16,7 +18,7 @@ test('renders App without errors', () => {
 test('renders the app header', () => {
     // Arrange
     const {getByText} = render(<App />);
-    const header = getByText("Add New Animal"); // there is an implicit assertion built in here
+    const header = getByText(/add new animal/i); // there is an implicit assertion built in here
 
     // Act
 
