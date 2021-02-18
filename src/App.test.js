@@ -18,8 +18,8 @@ test('renders App without errors', () => {
 
 test('renders the app header', () => {
     // Arrange
-    const {getByText} = render(<App />);
-    const header = getByText(/add new animal/i); // there is an implicit assertion built in here
+    render(<App />);
+    const header = screen.getByText(/add new animal/i); // there is an implicit assertion built in here
 
     // (no act step needed)
     // Assert (not absolutely necessary, but some other examples that work):
