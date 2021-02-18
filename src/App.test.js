@@ -26,6 +26,10 @@ test('renders the app header', () => {
     expect(header).toBeInTheDocument();
     expect(header).toBeTruthy();
     expect(header).toHaveTextContent("Add New Animal");
+    
+    // Negative assertions (don't need all of these, just some extra examples):
+    expect(header).not.toBeFalsy();
+    expect(header).not.toHaveTextContent(/add new dog/i);
 
 })
 
