@@ -25,10 +25,10 @@ test('when a user fills out and submits the form, a new animal is created and di
     const newAnimal = screen.findByText(/grizzly bear/i);
 
     newAnimal.then((element) => {
+        // intentionally over-asserting here, a bit more than I'd really do but it's okay to overdo it a bit!
         expect(element).toBeTruthy();
         expect(element).toBeInTheDocument();
-        expect(element).toBeVisible();
-        
+        expect(element).toBeVisible();  
     });
     
 
