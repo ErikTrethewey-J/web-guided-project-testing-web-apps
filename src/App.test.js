@@ -13,6 +13,7 @@ import App from "./App";
 test('renders App without errors', () => {
     // Arrange
     render(<App />);
+    // no act or assert steps needed -- assertion is built in to the above line
 });
 
 test('renders the app header', () => {
@@ -20,8 +21,7 @@ test('renders the app header', () => {
     const {getByText} = render(<App />);
     const header = getByText(/add new animal/i); // there is an implicit assertion built in here
 
-    // Act
-
+    // (no act step needed)
     // Assert
 })
 
