@@ -25,9 +25,11 @@ test('when a user fills out and submits the form, a new animal is created and di
     const newAnimal = screen.findByText(/grizzly bear/i);
 
     newAnimal.then((element) => {
-        expect(element).toBeVisible()
-        )
-});
+        expect(element).toBeTruthy();
+        expect(element).toBeInTheDocument();
+        expect(element).toBeVisible();
+        
+    });
     
 
     
