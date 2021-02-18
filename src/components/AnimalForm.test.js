@@ -30,8 +30,4 @@ test('when a user fills out and submits the form, a new animal is created and di
         expect(element).toBeInTheDocument();
         expect(element).toBeVisible();  
     });
-    
-
-    
-
 })
