@@ -11,5 +11,9 @@ import App from "./App";
 test('renders App without errors', () => {
     // Arrange
     render(<App />);
+});
+
+test('renders the app header', () => {
+    
 })
 
