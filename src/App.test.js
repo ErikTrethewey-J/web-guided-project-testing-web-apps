@@ -14,7 +14,12 @@ test('renders App without errors', () => {
 });
 
 test('renders the app header', () => {
-    const appRendered = render(<App />);
-    console.log(appRendered);
+    // Arrange
+    const {getByText} = render(<App />);
+    const header = getByText("add new animal");
+
+    // Act
+
+    // Assert
 })
 
