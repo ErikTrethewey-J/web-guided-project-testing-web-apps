@@ -14,6 +14,7 @@ test('renders App without errors', () => {
 });
 
 test('renders the app header', () => {
-    render(<App />);
+    const appRendered = render(<App />);
+    console.log(appRendered);
 })
 
